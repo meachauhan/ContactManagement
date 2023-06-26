@@ -13,11 +13,17 @@ import com.entity.User;
 @Controller
 public class HomeController {
 	
-	@RequestMapping("/home")
+	@RequestMapping("/")
 	public String home(Model m) {
 		m.addAttribute("title", "Home - Smart Contact Manager");
 		return "home";
 	}
+	@RequestMapping("/signup")
+	public String signup(Model m) {
+		m.addAttribute("title", "SignUp - Smart Contact Manager");
+		return "signup";
+	}
+	
 
 	@RequestMapping("/about")
 	public String home(Model m) {
