@@ -6,9 +6,47 @@
 </head>
 <body>
 
-<section class="banner d-flex justify-content-center align-items-center">
-	<div class="text-center">
-	<h1 class="font-weight-bold">This is signup page</h1>
+<section class="banner ">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<div class="my-card">
+					<div class="container text-center">
+						<img  style="width:80px" th:src="@{img/edit.png}" />
+					</div>
+					<h1 class="text-center"> Register Here !!</h1>
+					<form action="">
+						<div class="form-group">
+								<label for="Name">Your Name</label> 
+								<input
+									type="text" class="form-control" id="name"
+									placeholder="Enter Name"> 
+						</div>
+						<div class="form-group">
+								<label for="email">Your Name</label> 
+								<input
+									type="email" class="form-control" id="email"
+									placeholder="Enter Email"> 
+						</div>
+						<div class="form-group">
+								<label for="password">Your Password</label> 
+								<input
+									type="password" class="form-control" id="password"
+									placeholder="Enter Name"> 
+						</div>
+						<div class="form-group">
+								
+								<textarea class="form-control" id="about" rows="6" placeholder="Enter Something about yourself"></textarea>
+						</div>
+						<div class="container text-center">
+							<button type="submit" class="btn bg-color">Submit</button>
+							<button type="reset" class="btn btn-warning">Reset</button>
+						
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 

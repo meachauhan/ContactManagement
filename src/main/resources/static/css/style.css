@@ -2,6 +2,14 @@ body{
 	background: red;
 	
 }
+.nav-back{
+	background: rgba(233, 137, 137, 0.16) !important;
+	
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+	backdrop-filter: blur(6.6px) !important;
+	-webkit-backdrop-filter: blur(6.6px) !important;
+	border: 1px solid rgba(233, 137, 137, 0.27) !important;
+}
 .bg-color{
 	background: #2acdc1 !important;
 }
@@ -13,5 +21,21 @@ body{
 	
 	background-size: cover;
 	color: white;
+	
+}
+
+.my-card{
+	margin-top:20px;
+	
+	padding:20px;
+	color:white;
+	border-radius: 3%;
+	/* From https://css.glass */
+    background: rgba(233, 137, 137, 0.16);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.6px);
+	-webkit-backdrop-filter: blur(6.6px);
+	border: 1px solid rgba(233, 137, 137, 0.27);
 	
 }
