@@ -15,28 +15,28 @@
 						<img  style="width:80px" th:src="@{img/edit.png}" />
 					</div>
 					<h1 class="text-center"> Register Here !!</h1>
-					<form action="">
+					<form action="" th:action="@{do-register}">
 						<div class="form-group">
 								<label for="Name">Your Name</label> 
 								<input
 									type="text" class="form-control" id="name"
-									placeholder="Enter Name"> 
+									placeholder="Enter Name" name="name" th:value="${user.name}"> 
 						</div>
 						<div class="form-group">
 								<label for="email">Your Name</label> 
 								<input
-									type="email" class="form-control" id="email"
-									placeholder="Enter Email"> 
+									type="email" class="form-control" id="email" name="email"
+									placeholder="Enter Email" th:value="${user.email}"> 
 						</div>
 						<div class="form-group">
 								<label for="password">Your Password</label> 
 								<input
 									type="password" class="form-control" id="password"
-									placeholder="Enter Name"> 
+									placeholder="Enter Name" name="password" th:value="${user.password}"> 
 						</div>
 						<div class="form-group">
 								
-								<textarea class="form-control" id="about" rows="6" placeholder="Enter Something about yourself"></textarea>
+								<textarea class="form-control" id="about" rows="6" placeholder="Enter Something about yourself" name="about" th:value="${user.about}"></textarea>
 						</div>
 						<div class="container text-center">
 							<button type="submit" class="btn bg-color">Submit</button>
